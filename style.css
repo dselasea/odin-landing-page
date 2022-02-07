@@ -8,11 +8,14 @@
 
 :root {
     --white: #fff;
+    --light-gray: #e5e7eb;
     --blue: #3882f6;
     --blue-hover: #3881f6d8;
     --black: #000;
     --dark-gray: #3B3B40;
     --brown: #734022;
+    --purple: #59253E;
+    --quote-text: #1f2937;
 }
 
 html {
@@ -86,19 +89,24 @@ header .nav__link ul li a:hover {
 
 .header__content p {
     padding: 1rem 0;
+    font-size: 1.8rem;
 }
 
 .header__heading h1 {
     font-size: 4.8rem;
 }
 
-.header__btn {
-    display: inline-block;
-    padding: 1rem 4rem;
-    background: var(--blue);
-    color: #fff;
+.btn {
     border-radius: 5px;
     margin-bottom: 3rem;
+    font-size: 1.8rem;
+    padding: 0.7rem 4rem;
+    display: inline-block;
+    color: #fff;
+}
+
+.header__btn {
+    background: var(--blue);
 }
 
 .header__btn:hover {
@@ -110,16 +118,19 @@ header .nav__link ul li a:hover {
 
 /* INFORMATION SECTION STYLES */
 .information {
-    margin: 2rem 0;
+    padding: 5rem 0;
 }
 
 .information__title {
-    margin: 3rem 0;
     text-align: center;
+    font-size: 3.6rem;
+    font-weight: 400;
 }
 
 .information__content {
     text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: 4rem;
 }
 
 .information__content div img {
@@ -129,6 +140,57 @@ header .nav__link ul li a:hover {
 }
 
 /* END OF INFORMATION SECTION STYLES */
+
+/* SECTION QUOTE */
+    .quote {
+        background: var(--light-gray);
+        text-align: justify;
+        padding: 8rem 0;
+        font-size: 2.6rem;
+        font-weight: 100;
+        color: var(--quote-text);
+    }
+
+    .quote__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quote__content div {
+        width: 80%;
+    }
+
+    .quote__content div span {
+        display: block;
+        text-align: right;
+        font-weight: 700;
+    }
+/* END OF SECTION QUOTE */
+
+/* CALL TO ACTION */
+    .action {
+        padding: 5rem 0;
+    }
+
+    .action--content {
+        background: var(--blue);
+        border-radius: 10px;
+        color: var(--white);
+        padding: 3rem 2rem;
+    }
+
+    .action span {
+        display: inline-block;
+        margin-bottom: 1rem;
+    }
+
+    .action--content .btn--action {
+        border: 2px solid var(--white);
+    }
+
+/* END OF CALL TO ACTION */
 
 @media screen and (min-width: 780px){
     /* DESKTOP STYLES FOR HEADER */
@@ -157,4 +219,12 @@ header .nav__link ul li a:hover {
         gap: 2rem;
     }
     /* END INFORMATION CONTENT DESKTOP */
+
+    
+/* CALL TO ACTION DESKTOP*/
+    .action--content {
+        display: flex;
+        justify-content: space-around;
+    }
+/* END OF CALL TO ACTION DESKTOP*/
 }
