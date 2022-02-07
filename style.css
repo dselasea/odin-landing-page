@@ -105,14 +105,15 @@ header .nav__link ul li a:hover {
     color: #fff;
 }
 
+.btn:hover {
+    background: var(--blue-hover);
+    transition: all .3s ease-in;
+}
+
 .header__btn {
     background: var(--blue);
 }
 
-.header__btn:hover {
-    background: var(--blue-hover);
-    transition: all .3s ease-in;
-}
 /* END MOBILE STYLES FOR HEADER */
 
 
@@ -131,6 +132,7 @@ header .nav__link ul li a:hover {
     text-align: center;
     font-size: 1.7rem;
     margin-bottom: 4rem;
+    color: rgb(88, 84, 84);
 }
 
 .information__content div img {
@@ -191,6 +193,15 @@ header .nav__link ul li a:hover {
     }
 
 /* END OF CALL TO ACTION */
+
+/* FOOTER */
+footer {
+    padding: 3rem 0;
+    text-align: center;
+    color: var(--white);
+    background: var(--dark-gray);
+}
+/* END OF FOOTER */
 
 @media screen and (min-width: 780px){
     /* DESKTOP STYLES FOR HEADER */
